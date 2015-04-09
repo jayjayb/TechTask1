@@ -4,7 +4,6 @@ body {
 }
 code {
 	font-family: Courier, 'New Courier', monospace;
-	font-size: 0.75em;
 	color: black;
 }
 #code{
@@ -14,9 +13,11 @@ code {
 	color:black;
 }
 em{
-
+font-family: Courier, 'New Courier', monospace;
+color: black;
 }
 p {
+
 margin: 5px;
 }
 
@@ -34,11 +35,11 @@ border: 1px solid black;
 border-radius: 5px;
 background-color: #949494;
 text-align:left;
-width:300px;
+width:400px;
 height:300px;
 float:left;
 margin: auto 10px;
-overflow-y: auto;
+overflow: auto;
 }
 .whole {
 border: 1px solid black;
