@@ -60,6 +60,103 @@ within the javascript.js, put the following code:</p>
 
 <p>Let's see the result!(refresh the HTML page) If you see a pop up window with "Hello World", then you've accomplished this task.</p>
 
+<h2>Arrays </h2>
+
+<p>Array Declaration:</p>
+
+<p>In Javascript, there are two main ways to declare arrays.</p>
+
+<p>The Array Constructor:
+ var example = new Array ();
+var example = (“one”,”two”,”three”,”four”,”five”);
+Array Literal Notation:
+var example = [“one”,”two”,”three”,”four”];</p>
+<p>Length:
+	//using last array declared called example
+	example.length; //equal to 4
+	example.length == 4; //true</p>
+<p>Arrays can are dynamically sized in javascript meaning they can shrink and grow after they are declared and defined.
+	//adds 5 to end of the array; note: arrays can have elements of different types
+	example[length] = 5; 
+	example.length; //now length is 5
+	//can grow arrays by adding new elements to an index that might be greater than length
+example[9] = “the”; //example = [“one”,”two”,”three”,”four”, 5, , , “the”];</P>
+<p>// can modify elements too
+example[0] = 15; //example = [15,”two”,”three”,”four”, 5, , , “the”];</p>
+<p>//can delete elements
+delete example[1]; //changes example[1] from “two” to undefined</p>
+<p>Can use built in methods to add:
+//unlike java can add multiple elements at a time
+var arrayarray = [1,2,3,4,5,6];</p>
+arrayarray.push(7,8); //arrayarray = [1,2,3,4,5,6,7,8];
+<p>//can add elements to beginning as well as end
+arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</p>
+<p>Can use built in methods to remove elements:
+	var start = arrayarray.shift(); //start = -1
+	var end = arrayarray.pop(); //end = 8; arrayarray = [-1,0,1,2,3,4,5,6,7]</p>
+<p>Can search for elements using indexOf/lastIndexOf
+	returns -1 if it does not find an occurrence
+	indexOf(element,startIndex);
+	lastIndexOf(element,lastIndex);</p>
+<p>Accessors that do not modify array, but result in new array
+	Concatenate using concat:
+		array3 = array1.concat(array2);
+	Join on a separator (default is a comma):
+		join(seperator)
+	Extract a subsection using: splice
+		slice(startIndex, endIndex);
+		
+		var datnewarray = [1,2,3];
+		var spliced = datnewarray.slice(0,1) ; spliced = [1,2]</p>
+<p>Sorting and reversing:
+	arrayname.reverse(); //reverses arrayname
+	var sevenseven = [“jon”, “jacob”, “joseph”, “nate”];
+	//will put them in alphabetical order by default
+	sevenseven.sort(); // sevenseven = [“jacob”, “jon”, “joseph”, “nate”];</p>
+
+
+
+<h2>Functions:</h2>
+
+	<p>Declaring a function is a similiar to java
+		function addone (parameter1){
+			parameter1+=1;
+			return parameter1;
+		}</p>
+	<p>Calling a function is similar to java
+		var y = 199;
+		addone(parameter1);</p>
+	<p>Unlike, java you do have to name functions
+		function (parameter1, parameter2){...}; //this is valid</p>
+	<p>Need to assign a no named function to a variable to access
+		var tocall = function (parameter1, parameter2){...}; </p>
+	<p>Any function can be assigned to variable, not just no named ones.</p>
+	<p>Functions can be used as variables.
+		var two = 27;
+		addtwo = addone(z)+1;</p>
+	<p>Functions can be arguments in other functions.</p>
+	<p>Functions can be the return value of other functions.</p>
+	<p>
+	A function can be declared within another function (nested functions are allowed)
+		function nested(a,b){
+			function add{
+				return a + b;
+			}
+			function addfive{
+				return a +b + 5;
+			}
+				return add + addfive;
+
+		}</p>
+	<p>Like java, local variables (those created in the function) are only visible inside of the function. However, if an inner function is being returned, it is called a closure and its local variables are kept alive after the function has returned.</p>
+<p>
+Reduce will apply an operator between all elements of an array and uses a function as argument:
+	var example = [4,5,6];
+	var mult = example.reduce (function(a,b){
+		return a*b
+	}</p>
+<p>Filter and Map work in the same way. They modify an array by taking a function as a parameter. Map will take an array and transform it into an new array according to the function passed as a parameter. Filter will filter the elements of an array according to the function passed as a parameter. Foreach will do modify each element of an array according to the parameter function passed in.
+Sort can take a comparison function a parameter and then sort it according to that instead of the standard alphabetical order for strings.</p>
 
 </div>
 
