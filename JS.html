@@ -114,11 +114,11 @@ var example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;];
 	example[length] = 5; 
 	example.length; //now length is 5
 	//can grow arrays by adding new elements to an index that might be greater than length
-example[9] = “the”; //example = [“one”,”two”,”three”,”four”, 5, , , “the”];</P>
+example[9] = &#34;the&#34;; //example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</P>
 <p>// can modify elements too
-example[0] = 15; //example = [15,”two”,”three”,”four”, 5, , , “the”];</p>
+example[0] = 15; //example = [15,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</p>
 <p>//can delete elements
-delete example[1]; //changes example[1] from “two” to undefined</p>
+delete example[1]; //changes example[1] from &#34;two&#34; to undefined</p>
 <p>Can use built in methods to add:
 //unlike java can add multiple elements at a time
 var arrayarray = [1,2,3,4,5,6];</p>
@@ -144,12 +144,13 @@ arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</p>
 		var spliced = datnewarray.slice(0,1) ; spliced = [1,2]</p>
 <p>Sorting and reversing:
 	arrayname.reverse(); //reverses arrayname
-	var sevenseven = [“jon”, “jacob”, “joseph”, “nate”];
+	var sevenseven = [&#34;jon&#34;, &#34;jacob&#34;, &#34;joseph&#34;, &#34;nate&#34;];
 	//will put them in alphabetical order by default
-	sevenseven.sort(); // sevenseven = [“jacob”, “jon”, “joseph”, “nate”];</p>
+	sevenseven.sort(); // sevenseven = [&#34;jacob&#34;, &#34;jon&#34;, &#34;joseph&#34;, &#34;nate&#34;];</p>
 
 
-
+<div class = "inner">
+<div class = "whole">
 <h3>Functions:</h3>
 
 	<p>Declaring a function is a similiar to java
@@ -192,6 +193,8 @@ Reduce will apply an operator between all elements of an array and uses a functi
 <p>Filter and Map work in the same way. They modify an array by taking a function as a parameter. Map will take an array and transform it into an new array according to the function passed as a parameter. Filter will filter the elements of an array according to the function passed as a parameter. Foreach will do modify each element of an array according to the parameter function passed in.
 Sort can take a comparison function a parameter and then sort it according to that instead of the standard alphabetical order for strings.</p>
 
+</div>
+</div>
 </div>
 
 <h3 id="whats-next">What's Next</h3>
