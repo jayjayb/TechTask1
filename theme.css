@@ -6,11 +6,19 @@ code {
 	font-family: Courier, 'New Courier', monospace;
 	color: black;
 }
+.italic {
+	font-style: italic;
+}
+#bvi {
+color:black;
+}
 #code{
 	background-color: #FFFFFF;
 }
 #code p{
+	margin: 0px;
 	color:black;
+	font-size: 0.5em;
 }
 #image {
 border: initial;
@@ -38,17 +46,16 @@ margin: 5px;
 #outer{
 min-width: 1000px;
 text-align:center;
-font-family: 'Righteous', cursive;
 color: white;
 }
 #tab {
 	background-color: white;
-    margin-left:auto; 
-    margin-right:auto;
+    margin: 15px auto; 
 	border: 1px solid black;
     border-collapse: collapse;
 }
 #tab th{
+	min-width: 100px;
 	color: black;
 	border: 1px solid black;
     border-collapse: collapse;
@@ -62,7 +69,32 @@ color: white;
 #tab td + td{
 	text-align:left;
 }
+
+#tabe {
+	background-color: white;
+    margin: 15px auto; 
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+#tabe th{
+	min-width: 100px;
+	color: black;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+#tabe td{
+	color: black;
+	font-family: Courier, 'New Courier', monospace;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+#tabe td + td{
+	font-size: 1.5em;
+}
+
+
 .inner{
+font-family:"Arial Black", Gadget, sans-serif;
 display: inline-block;
 margin: 12px;
 }
@@ -87,10 +119,17 @@ float:left;
 margin: auto 10px;
 }
 h1 {
-   -webkit-text-stroke: 1px white;
-   color: black;
-   margin: auto 10px;
+	font-family: 'Righteous', cursive;
+	-webkit-text-stroke: 1px white;
+	color: black;
+	margin: auto 10px;
 }
+h2, h3{
+	font-family: 'Righteous', cursive;
+	color: white;
+	margin: 10px;
+}
+
 #nav {
     list-style-type: none;
     margin: 0;
@@ -98,6 +137,7 @@ h1 {
     overflow: hidden;
 }
 #nav li {
+	font-family: 'Righteous', cursive;
     float: left;
 }
 #nav a:link, #nav a:visited {
@@ -115,3 +155,4 @@ h1 {
 #nav a:hover, #nav a:active {
     background-color: #00A5A8;
 }
+

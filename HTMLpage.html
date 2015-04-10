@@ -27,13 +27,13 @@
 		<h2>What is HTML?</h2>
 		<div class="half">
 			<p>HTML stands for HyperText Markup Language. HTML is the standard markup language used to create web pages. HTML files are text files made up of various HTML elements that
-		consist of various tags enclosed in angle brackets like <em>&lt;html&gt;</em> or <em>&lt;table&gt;</em>.
+		consist of various tags enclosed in angle brackets like <em>&lt;html&gt;</em> and <em>&lt;table&gt;</em>.
 		Web browsers interpret these elements as different objects like lists, links, and pictures and will display them as such.
-		HTML Documents are separated into 3 main types, Structure Elements, <em>&lt;head&gt;</em> and <em>&lt;body&gt;</em></p>
+		HTML Documents are separated into 3 main types, structure, <em>&lt;head&gt;</em>, and <em>&lt;body&gt;</em> elements.</p>
 		</div>
 		<div class="half" id="code">
 			<p>Sample HTML Code</p>
-			<code>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;	<br />&lt;h1&gt;HTML Example Heading&lt;/h1&gt;	<br />&lt;p&gt;HTML Example paragraph.&lt;/p&gt;<br />&lt;ul&gt;<br />&lt;a href="http://www.google.com"&gt;Example Link&lt;/a&gt;<br />&lt;li&gt;List Item 1&lt;/li&gt;<br />&lt;li&gt;List Item 2&lt;/li&gt;<br />&lt;li&gt;List Item 3&lt;/li&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</code>
+			<code>&lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;body&gt;	<br />&lt;h1&gt;HTML Example Heading&lt;/h1&gt;<br />&lt;p&gt;HTML Example paragraph.&lt;/p&gt;<br />&lt;h2&gt;HTML Example Heading 2&lt;/h2&gt;<br />&lt;ul&gt;<br />&lt;li&gt;List Item 1&lt;/li&gt;<br />&lt;li&gt;List Item 2&lt;/li&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</code>
 		</div>
 	</div>
 	<br />
@@ -43,11 +43,8 @@
 			<img id="resize" src="element.png" alt="Example Element">
 		</div>
 		<div class="half">
-			<p>HTML elements are the building blocks of web pages.  Some elements like &lt;html&gt;, &lt;head&gt;, and &lt;body&gt; can be omitted in HTML5 but it is recommended you always include them. Many elements are able to be nested inside of containing elements.  
-		
-			<p> Each HTML element has different possible attribute 
-			fields, some are required and some are optional. It 
-			is left to the developer to determine which optional tags they require.  As shown in the image to the left, each attribute name requires a corresponding attribute value, typically this value needs to be represented by a String and therefore require surrounding quotation marks.</p>
+			<p>HTML elements are the building blocks of web pages.  Each HTML element has different possible attribute 
+			fields, some are required and some are optional. It is left to the developer to determine which optional tags they require.  As shown in the image to the left, each attribute name requires a corresponding attribute value, typically this value needs to be represented by a String and therefore require surrounding quotation marks.  Below is a list of commonly used HTML elements and their descriptions.</p>
 		</div>
 		<h3>Common Elements</h3>
 		<table id="tab">
@@ -73,17 +70,56 @@
 			</tr>
 			<tr>
 				<td>&lt;h1&gt;</td>
-				<td>Defines a header 1 element (can also be h2-h6 which are smaller)</td>
+				<td>Defines a header element &#40;h2-h6 define smaller headings&#41;</td>
 			</tr>
 			<tr>
 				<td>&lt;ul&gt;</td>
-				<td>Defines a unordered &#40;bulleted&#41; list</td>
+				<td>Defines a unordered &#40;bulleted&#41; list element</td>
 			</tr>
 			<tr>
 				<td>&lt;ol&gt;</td>
-				<td>Defines a ordered &#40;numbered&#41; list</td>
+				<td>Defines a ordered &#40;numbered&#41; list element</td>
+			</tr>
+			<tr>
+				<td>&lt;div&gt;</td>
+				<td>Defines a divider element, used a a container for content</td>
+			</tr>
+			<tr>
+				<td>&lt;p&gt;</td>
+				<td>Defines a paragraph element</td>
+			</tr>
+			<tr>
+				<td>&lt;table&gt;</td>
+				<td>Defines a table element</td>
+			</tr>
+			<tr>
+				<td>&lt;th&gt;</td>
+				<td>Defines a table heading element</td>
+			</tr>
+			<tr>
+				<td>&lt;tr&gt;</td>
+				<td>Defines a table row element</td>
+			</tr>
+			<tr>
+				<td>&lt;img&gt;</td>
+				<td>Defines a image element &#40;requires "src" attribute&#41;</td>
+			</tr>
+			<tr>
+				<td>&lt;a&gt;</td>
+				<td>Defines a anchor &#40;link&#41; element &#40;requires "href" attribute&#41;</td>
 			</tr>
 		</table>
+		<h3>Block vs. Inline Elements</h3>
+		<div class="half">
+			<h2 id="bvi">BLOCK</h2>
+			<p>A block element is an element that takes up the full width available, and has a line break before and after it.</p>
+			<h2 id="bvi">INLINE</h2>
+			<p>An inline element only takes up as much width as necessary, and does not force line breaks.</p>
+			<p>Breaks can be added by inserting a <em>&lt;br \&gt;</em> element.</p>
+		</div>
+		<div class="half" id="image">
+		<img id="resize" src="blockinline.png" alt="HTML Tree">
+		</div>
 	</div>
 	<br />
 	<div class="inner">
@@ -95,6 +131,67 @@
 			<p> HTML ARE TREES </p>
 		</div>
 	</div>
+	<br />	
+	<div class="inner">
+		<h2>HTML Entities</h2>
+		<div class="whole">
+			<p>Some characters in HTML are reserved for markup syntax.  For example, let's say you wanted to use the less than &#40;&lt;&#41; or greater than &#40;&gt;&#41; inside a of mathematical expression you are displaying.  Those symbols could be misinterpreted as defining the tag of an element, and end up ruining the page display.  To avoid this, HTML defines codes for these escape characters.  These codes follow the format:</p>
+			<p class="italic">&amp;entity_name;</p>
+			<p>OR</p>
+			<p class="italic">&amp;&#35;entity_number;</p>
+		</div>
+	</div>
+	<table id="tabe">
+			<tr>
+				<th>Code</th>
+				<th>Render</th>
+			</tr>
+			<tr>
+				<td>&amp;quot;</td>
+				<td>&quot;</td>
+			</tr>
+			<tr>
+				<td>&amp;lt;</td>
+				<td>&lt;</td>
+			</tr>
+						<tr>
+				<td>&amp;gt;</td>
+				<td>&gt;</td>
+			</tr>
+						<tr>
+				<td>&amp;nbsp;</td>
+				<td>&nbsp;</td>
+			</tr>
+						<tr>
+				<td>&amp;copy;</td>
+				<td>&copy;</td>
+			</tr>
+						<tr>
+				<td>&amp;reg;</td>
+				<td>&reg;</td>
+			</tr>
+						<tr>
+				<td>&amp;trade;</td>
+				<td>&trade;</td>
+			</tr>
+						<tr>
+				<td>&amp;pound;</td>
+				<td>&pound;</td>
+			</tr>
+						<tr>
+				<td>&amp;euro;</td>
+				<td>&euro;</td>
+			</tr>
+						<tr>
+				<td>&amp;ldquo;</td>
+				<td>&ldquo;</td>
+			</tr>
+						</tr>
+						<tr>
+				<td>&amp;rdquo;</td>
+				<td>&rdquo;</td>
+			</tr>
+	</table>
 </div>
 
 
