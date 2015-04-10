@@ -111,44 +111,49 @@ var example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;];
 	//using last array declared called example
 	example.length; //equal to 4
 	example.length == 4; //true</p>
-<p>Arrays can are dynamically sized in javascript meaning they can shrink and grow after they are declared and defined.
+<p>Arrays can are dynamically sized in javascript meaning they can shrink and grow after they are declared and defined.</p>
+<code>
 	//adds 5 to end of the array; note: arrays can have elements of different types
 	example[length] = 5; 
 	example.length; //now length is 5
 	//can grow arrays by adding new elements to an index that might be greater than length
-example[9] = &#34;the&#34;; //example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</P>
-<p>// can modify elements too
-example[0] = 15; //example = [15,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</p>
-<p>//can delete elements
-delete example[1]; //changes example[1] from &#34;two&#34; to undefined</p>
-<p>Can use built in methods to add:
+example[9] = &#34;the&#34;; //example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</code></p>
+<p><code>// can modify elements too
+example[0] = 15; //example = [15,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</code></p>
+<p><code>//can delete elements
+delete example[1]; //changes example[1] from &#34;two&#34; to undefined</code></p>
+<p>Can use built in methods to add:</p>
+<p><code>
 //unlike java can add multiple elements at a time
-var arrayarray = [1,2,3,4,5,6];</p>
-arrayarray.push(7,8); //arrayarray = [1,2,3,4,5,6,7,8];
-<p>//can add elements to beginning as well as end
-arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</p>
-<p>Can use built in methods to remove elements:
-	var start = arrayarray.shift(); //start = -1
-	var end = arrayarray.pop(); //end = 8; arrayarray = [-1,0,1,2,3,4,5,6,7]</p>
-<p>Can search for elements using indexOf/lastIndexOf
-	returns -1 if it does not find an occurrence
-	indexOf(element,startIndex);
-	lastIndexOf(element,lastIndex);</p>
-<p>Accessors that do not modify array, but result in new array
-	Concatenate using concat:
-		array3 = array1.concat(array2);
-	Join on a separator (default is a comma):
-		join(seperator)
-	Extract a subsection using: splice
+var arrayarray = [1,2,3,4,5,6];</code></p>
+<p><code>
+arrayarray.push(7,8); //arrayarray = [1,2,3,4,5,6,7,8];</code></p>
+<p><code>//can add elements to beginning as well as end
+arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</code></p>
+<p>Can use built in methods to remove elements:</p>
+	<p><code>var start = arrayarray.shift(); //start = -1
+	var end = arrayarray.pop(); //end = 8; arrayarray = [-1,0,1,2,3,4,5,6,7]</code></p>
+<p>Can search for elements using indexOf/lastIndexOf</p>
+	<p>returns -1 if it does not find an occurrence</p>
+	<p><code>indexOf(element,startIndex);</code></p>
+	<p><code>lastIndexOf(element,lastIndex);</code></p>
+<p>Accessors that do not modify array, but result in new array</p>
+	<p>Concatenate using concat:</p>
+		<p><code>array3 = array1.concat(array2);</code></p>
+	<p>Join on a separator (default is a comma):</p>
+		<p><code>join(seperator)</code></p>
+	<p>Extract a subsection using: splice
 		slice(startIndex, endIndex);
+		</p>
 		
-		var datnewarray = [1,2,3];
-		var spliced = datnewarray.slice(0,1) ; spliced = [1,2]</p>
-<p>Sorting and reversing:
+		<p><code>var datnewarray = [1,2,3];
+		var spliced = datnewarray.slice(0,1) ; spliced = [1,2]</code></p>
+<p>Sorting and reversing:</p>
+<p><code>
 	arrayname.reverse(); //reverses arrayname
 	var sevenseven = [&#34;jon&#34;, &#34;jacob&#34;, &#34;joseph&#34;, &#34;nate&#34;];
 	//will put them in alphabetical order by default
-	sevenseven.sort(); // sevenseven = [&#34;jacob&#34;, &#34;jon&#34;, &#34;joseph&#34;, &#34;nate&#34;];</p>
+	sevenseven.sort(); // sevenseven = [&#34;jacob&#34;, &#34;jon&#34;, &#34;joseph&#34;, &#34;nate&#34;];</code></p>
 </div>
 </div>
 
@@ -156,27 +161,33 @@ arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</p>
 <div class = "whole">
 <h3>Functions:</h3>
 
-	<p>Declaring a function is a similiar to java
+	<p>Declaring a function is a similiar to java</p>
+		<p><code>
 		function addone (parameter1){
 			parameter1+=1;
 			return parameter1;
-		}</p>
-	<p>Calling a function is similar to java
+		}</code></p>
+	<p>Calling a function is similar to java</p>
+		<p><code>
 		var y = 199;
-		addone(parameter1);</p>
-	<p>Unlike, java you do have to name functions
-		function (parameter1, parameter2){...}; //this is valid</p>
-	<p>Need to assign a no named function to a variable to access
-		var tocall = function (parameter1, parameter2){...}; </p>
+		addone(parameter1);</code></p>
+	<p>Unlike, java you do have to name functions</p>
+		<p><code>
+		function (parameter1, parameter2){...}; //this is valid</code></p>
+	<p>Need to assign a no named function to a variable to access</p>
+
+		<p><code>var tocall = function (parameter1, parameter2){...};</code> </p>
 	<p>Any function can be assigned to variable, not just no named ones.</p>
-	<p>Functions can be used as variables.
-		var two = 27;
-		addtwo = addone(z)+1;</p>
+	<p>Functions can be used as variables.</p>
+
+		<p><code>var two = 27;
+		addtwo = addone(z)+1;</code></p>
 	<p>Functions can be arguments in other functions.</p>
 	<p>Functions can be the return value of other functions.</p>
 	<p>
-	A function can be declared within another function (nested functions are allowed)
-		function nested(a,b){
+	A function can be declared within another function (nested functions are allowed)</p>
+
+		<p><code>function nested(a,b){
 			function add{
 				return a + b;
 			}
@@ -185,15 +196,20 @@ arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</p>
 			}
 				return add + addfive;
 
-		}</p>
+		}</code></p>
 	<p>Like java, local variables (those created in the function) are only visible inside of the function. However, if an inner function is being returned, it is called a closure and its local variables are kept alive after the function has returned.</p>
 <p>
-Reduce will apply an operator between all elements of an array and uses a function as argument:
+Reduce will apply an operator between all elements of an array and uses a function as argument:</p>
+	<p><code>
 	var example = [4,5,6];
 	var mult = example.reduce (function(a,b){
 		return a*b
-	}</p>
-<p>Filter and Map work in the same way. They modify an array by taking a function as a parameter. Map will take an array and transform it into an new array according to the function passed as a parameter. Filter will filter the elements of an array according to the function passed as a parameter. Foreach will do modify each element of an array according to the parameter function passed in.
+	}</code></p>
+
+<p>Filter and Map work in the same way. They modify an array by taking a function as a parameter. Map will take an array and transform it into an new array according to the function passed as a parameter.
+
+Filter will filter the elements of an array according to the function passed as a parameter. Foreach will do modify each element of an array according to the parameter function passed in.
+
 Sort can take a comparison function a parameter and then sort it according to that instead of the standard alphabetical order for strings.</p>
 </div>
 </div>
