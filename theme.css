@@ -10,7 +10,7 @@ code {
 	font-style: italic;
 }
 #bvi {
-color:black;
+	color:black;
 }
 #code{
 	background-color: #FFFFFF;
@@ -18,7 +18,7 @@ color:black;
 #code p{
 	margin: 0px;
 	color:black;
-	font-size: 0.5em;
+	font-size: 0.8em;
 }
 #image {
 border: initial;
