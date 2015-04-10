@@ -293,7 +293,7 @@
 		<h2>Classes</h2>
 		<div class = "inner">
 			<div class = "whole">
-			<p>stuff goes here</p>
+			<p>Classes can be used to construct objects. They are relatively easy to make in Ruby, and just like in all of object-oriented programming allow for easier maintainablity of code. We'll explain the basics of making a class here. </p>
 			</div>
 		</div>
 	<br />
@@ -301,6 +301,17 @@
 			</br>
 			<div class = "half">
 			<p> 
+			To start off, use the keyword 'class', followed by its name. The end of the class definition marked by the 'end' keyword. 
+			</br>
+			---
+			</br>
+
+			Next, the constructor must be defined. To do so, make a function named 'initialize'. When an object of the class gets created, the instance variables will be initialized through the function. Note that '@' at the beginning of a variable marks an instance variable. You can throw in all of your class functions inside the class definition as well. 
+			</br>
+			---
+			</br>
+
+			Outside of your class definition, you can use the .new function to initialize an object of your class. the .new function will constuct the object using the initialize function inside the class definition. 
 
 			</p>
 			</div>
@@ -308,9 +319,39 @@
 				<p class = "code">Classes Example</p>
 				
 				<code>
-				
+				class ClassName</br>
+				...</br>
+				end</br>	
+
+				</br>
+				------
+				</br>
+
 				</code>
 				</br>	
+
+				<code>
+				class ClassName</br>
+				</br>
+				def initialize</br>
+				@x = 0</br>
+				@y = 0</br>
+				end</br>
+				...</br>
+				end</br>
+
+				</br>
+				------
+				</br>
+
+				</code>
+				</br>		
+
+
+				<code>
+				X = className.New
+
+				</code>			
 
 			</div>
 		</div>
