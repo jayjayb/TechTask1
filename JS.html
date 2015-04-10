@@ -1,258 +1,259 @@
 <!doctype html>
 <html>
-  <head>
-  <title>Learn Javascript</title>
-<link rel="stylesheet" type="text/css" href="theme.css">
-<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  </head>
-  
-  <body class="index">
-<div id = "outer">
-<div class ="inner">
-	<h1>GOOGLE 2 TUTORIAL</h1>
+<head>
+	<title>Learn Javascript</title>
+	<link rel="stylesheet" type="text/css" href="theme.css">
+	<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="index">
+	<div id = "outer">
+		<div class ="inner">
+			<h1>GOOGLE 2 TUTORIAL</h1>
+		</div>
+		<br />
+		<div class="inner">
+			<ul id  = "nav">
+				<li ><a href="HTMLpage.html">HTML</a></li>
+				<li ><a href="CSSpage.html">CSS</a></li>
+				<li ><a href="ruby.html">RUBY</a></li>
+				<li ><a href="JS.html">JAVASCRIPT</a></li>
+			</ul>
+		</div>
+		<br />
+
+
+		<!-- This file is a partial that generates javascript tutorial -->
+
+		<div class = "inner">
+			<!-- <h2 id="javascript-tutorial" style = "color:white">Javascript Tutorial</h2> -->
+
+
+			<h2 id="what-is-javascript">What is Javascript?</h2>
+			<div class = "whole">
+				<p>Javascript is a scripting language that adds behavior to a website. Websites with only <a href="HTMLpage.html">HTML</a> and <a href="CSSpage.html">CSS</a> are static, meaning that the webpage is does not change much. With the help of Javascript, one can create dynamic web page that its content could change after it is rendered.</p>
+			</div>
+		</div>
+	</br>
+	<div class = "inner">
+		<h2 id="javascript-concept">Javascript Concepts</h2>
+		<div class = "whole">
+			<p>Javascript is understood by most browsers. It is a scripting language that we can use to accomplish tasks on the client side. The following are some concepts about Javascript</p>
+
+			<ul>
+				<li>Javascript works with <a href="HTMLpage.html">HTML</a></li>
+				<li>Javascript can be used to do some computation</li>
+				<li>Javascript is dynamically typed(different from Java)</li>
+				<li>Javascript is object based, it uses DOM(Document Object Model)</li>
+				<li>Javascript can be used to handle events on <a href="HTMLpage.html">HTML</a> page</li>
+			</ul>
+		</div>
 	</div>
-	<br />
-	<div class="inner">
-		<ul id  = "nav">
-			<li ><a href="HTMLpage.html">HTML</a></li>
-			<li ><a href="CSSpage.html">CSS</a></li>
-			<li ><a href="ruby.html">RUBY</a></li>
-			<li ><a href="JS.html">JAVASCRIPT</a></li>
-		</ul>
+	</br>
+	<div class = "inner">
+		<div class = "whole">
+			<p>Today we are going to learn to some basics about Javascript. First, let's start writing a "Hello World" program using Javascript and understand where to put Javascript code (inline or external).</p>
+		</div>
 	</div>
-	<br />
-	
-    
- <!-- This file is a partial that generates javascript tutorial -->
+	</br>
+	<div class = "inner">
+		<h2>"Hello World" with Javascript (Inline)</h2>
+		<div class = "whole">
+			<p>Let's start our first "Hello World" program use inlining.</p>
 
-<div class = "inner">
-<!-- <h2 id="javascript-tutorial" style = "color:white">Javascript Tutorial</h2> -->
+			<p>Let's have a plain <a href="HTMLpage.html">HTML</a> page ready. Also open the file in a browser.</p>
 
+			<img src = "img/Plain<a href="HTMLpage.html">HTML</a>.png"/ alt = "plain <a href="HTMLpage.html">HTML</a> picture"> 
 
-<h2 id="what-is-javascript">What is Javascript?</h2>
-<div class = "whole">
-<p>Javascript is a scripting language that adds behavior to a website. Websites with only HTML and CSS are static, meaning that the webpage is does not change much. With the help of Javascript, one can create dynamic web page that its content could change after it is rendered.</p>
-</div>
-</div>
+			<p>Javascript could be embedded into the <a href="HTMLpage.html">HTML</a> page(Inline). Save the file.</p>
 
-<div class = "inner">
-<h2 id="javascript-concept">Javascript Concepts</h2>
-<div class = "whole">
-<p>Javascript is understood by most browsers. It is a scripting language that we can use to accomplish tasks on the client side. The following are some concepts about Javascript</p>
+			<img src = "img/InlineJS.png"/ alt = "inline JS picture"> 
 
-<ul>
-  <li>Javascript works with HTML</li>
-  <li>Javascript can be used to do some computation</li>
-  <li>Javascript is dynamically typed(different from Java)</li>
-  <li>Javascript is object based, it uses DOM(Document Object Model)</li>
-  <li>Javascript can be used to handle events on HTML page</li>
-</ul>
-</div>
-</div>
-<div class = "inner">
-<div class = "whole">
-<p>Today we are going to learn to some basics about Javascript. First, let's start writing a "Hello World" program using Javascript and understand where to put Javascript code (inline or external).</p>
-</div>
-</div>
+			<p>Refresh the <a href="HTMLpage.html">HTML</a> page on browser. Did you see that "Hello World" is  now shown in the <a href="HTMLpage.html">HTML</a> page?</p>
 
-<div class = "inner">
-<h2>"Hello World" with Javascript (Inline)</h2>
-<div class = "whole">
-<p>Let's start our first "Hello World" program use inlining.</p>
+			<p>Congratulations, you've just finished a "Hello World" program</p>
+		</div>
+	</div>
 
-<p>Let's have a plain HTML page ready. Also open the file in a browser.</p>
+</br>
+	<div class = "inner">
+		<h2>"Hello World" with Javascript (Link External File)</h2>
+		<div class = "whole">
+			<p>Let's start our second "Hello World" program using external Javascript file.</p>
 
-<img src = "img/PlainHTML.png"/ alt = "plain HTML picture"> 
+			<p>Let's have a plain <a href="HTMLpage.html">HTML</a> page ready just like before. Also open the file in a browser.</p>
 
-<p>Javascript could be embedded into the HTML page(Inline). Save the file.</p>
+			<p>Javascript can be put in an external file and We can link to the Javascript file by doing the following.</p>
 
-<img src = "img/InlineJS.png"/ alt = "inline JS picture"> 
+			<img src = "img/ExternalJS.png"/ alt = "external JS picture"> 
 
-<p>Refresh the HTML page on browser. Did you see that "Hello World" is  now shown in the HTML page?</p>
+			<p>Create a separate javascript file in the same directory, call it "javascript.js" as you see in the above picture. Within the javascript.js, put the following code:</p>
 
-<p>Congratulations, you've just finished a "Hello World" program</p>
-</div>
-</div>
+			<code>window.alert("Hello World! ");</code>
 
+			<p>This will create a pop up window every time the page is loaded.</p>
 
-<div class = "inner">
-<h2>"Hello World" with Javascript (Link External File)</h2>
-<div class = "whole">
-<p>Let's start our second "Hello World" program using external Javascript file.</p>
+			<p>Let's see the result! (refresh the <a href="HTMLpage.html">HTML</a> page) If you see a pop up window with "Hello World", then you've accomplished this task.</p>
+		</div>
+	</div>
+</br>
+	<div class = "inner">
 
-<p>Let's have a plain HTML page ready just like before. Also open the file in a browser.</p>
+		<h2>Changing HTML Content</h2>
+		<div class = "whole">
+			<p>Next, we will introduce the DOM(Document Object Model). The DOM is an javascript interface that allows us to access the <a href="HTMLpage.html">HTML</a> content.</p>
 
-<p>Javascript can be put in an external file and We can link to the Javascript file by doing the following.</p>
+			<p>Let's say we have the given plain <a href="HTMLpage.html">HTML</a> page like before. We would like to change the "This is a paragraph" to "I am using Javascript DOM!".</p>
 
-<img src = "img/ExternalJS.png"/ alt = "external JS picture"> 
+			<p>First, open the original <a href="HTMLpage.html">HTML</a> page in a browser. We want to compare how the content of <a href="HTMLpage.html">HTML</a> page is changed before and after Javascript code. The "This is a paragraph" is part of the paragraph tag. We would like to access the paragraph tag and change its content through Javascript DOM. First, we could assign an id to the paragraph tag. Then, we could access the the paragraph through the id. Like the following:</p>
 
-<p>Create a separate javascript file in the same directory, call it "javascript.js" as you see in the above picture. Within the javascript.js, put the following code:</p>
+			<img src = "img/DOM.png"/ alt = "DOM picture"> 
 
-<code>window.alert("Hello World! ");</code>
+			<p>Then refresh the <a href="HTMLpage.html">HTML</a> page. Did you see that the content of the first paragraph tag just changed?</p>
 
-<p>This will create a pop up window every time the page is loaded.</p>
+			<p>Congrats, you just learned how to use the DOM to access <a href="HTMLpage.html">HTML</a> content.</p>
+		</div>
+	</div>
+</br>
+	<div class = "inner" >
 
-<p>Let's see the result! (refresh the HTML page) If you see a pop up window with "Hello World", then you've accomplished this task.</p>
-</div>
-</div>
+		<h2>Arrays </h2>
+		<div class = "whole">
+			<p>Array Declaration:</p>
 
-<div class = "inner">
+			<p>In Javascript, there are two main ways to declare arrays.</p>
+			<p>The Array Constructor:</p>
+			<p><em>var example = new Array();
+				var example = &#40;&#34;one,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;,&#34;five&#34;&#41;</em>
+				<br />
+				Array Literal Notation:
+				<em>var example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;];</em>
+			</p>
 
-<h2 id="change-html-content">Changing HTML Content</h2>
-<div class = "whole">
-<p>Next, we will introduce the DOM(Document Object Model). The DOM is an javascript interface that allows us to access the HTML content.</p>
+		</div>
+	</div>
+</br>
+	<div class = "inner">
+		<div class = "whole">
+			<p>Length:
+				//using last array declared called example
+				example.length; //equal to 4
+				example.length == 4; //true</p>
+				<p>Arrays can are dynamically sized in Javascript meaning they can shrink and grow after they are declared and defined.</p>
+				<code>
+					//adds 5 to end of the array; note: arrays can have elements of different types
+					example[length] = 5; 
+					example.length; //now length is 5
+					//can grow arrays by adding new elements to an index that might be greater than length
+					example[9] = &#34;the&#34;; //example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</code></p>
+					<p><code>// can modify elements too
+						example[0] = 15; //example = [15,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</code></p>
+						<p><code>//can delete elements
+							delete example[1]; //changes example[1] from &#34;two&#34; to undefined</code></p>
+							<p>Can use built-in methods to add:</p>
+							<p><code>
+								//unlike Java can add multiple elements at a time
+								var arrayarray = [1,2,3,4,5,6];</code></p>
+								<p><code>
+									arrayarray.push(7,8); //arrayarray = [1,2,3,4,5,6,7,8];</code></p>
+									<p><code>//can add elements to beginning as well as end
+										arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</code></p>
+										<p>Can use built-in methods to remove elements:</p>
+										<p><code>var start = arrayarray.shift(); //start = -1
+											var end = arrayarray.pop(); //end = 8; arrayarray = [-1,0,1,2,3,4,5,6,7]</code></p>
+											<p>Can search for elements using indexOf/lastIndexOf</p>
+											<p>returns -1 if it does not find an occurrence</p>
+											<p><code>indexOf(element,startIndex);</code></p>
+											<p><code>lastIndexOf(element,lastIndex);</code></p>
+											<p>Accessors that do not modify array, but result in new array</p>
+											<p>Concatenate using concat:</p>
+											<p><code>array3 = array1.concat(array2);</code></p>
+											<p>Join on a separator (default is a comma):</p>
+											<p><code>join(seperator)</code></p>
+											<p>Extract a subsection using: splice
+												slice(startIndex, endIndex);
+											</p>
 
-<p>Let's say we have the given plain HTML page like before. We would like to change the "This is a paragraph" to "I am using Javascript DOM!".</p>
+											<p><code>var datnewarray = [1,2,3];
+												var spliced = datnewarray.slice(0,1) ; spliced = [1,2]</code></p>
+												<p>Sorting and reversing:</p>
+												<p><code>
+													arrayname.reverse(); //reverses arrayname
+													var sevenseven = [&#34;jon&#34;, &#34;jacob&#34;, &#34;joseph&#34;, &#34;nate&#34;];
+													//will put them in alphabetical order by default
+													sevenseven.sort(); // sevenseven = [&#34;jacob&#34;, &#34;jon&#34;, &#34;joseph&#34;, &#34;nate&#34;];</code></p>
+												</div>
+											</div>
+											</br>
+											<div class = "inner">
 
-<p>First, open the original HTML page in a browser. We want to compare how the content of HTML page is changed before and after Javascript code. The "This is a paragraph" is part of the paragraph tag. We would like to access the paragraph tag and change its content through Javascript DOM. First, we could assign an id to the paragraph tag. Then, we could access the the paragraph through the id. Like the following:</p>
+												<h2>Functions</h2>
+												<div class = "whole">
+													<p>Declaring a function is a similiar to java</p>
+													<p><code>
+														function addone (parameter1){
+														parameter1+=1;
+														return parameter1;
+													}</code></p>
+													<p>Calling a function is similar to java</p>
+													<p><code>
+														var y = 199;
+														addone(parameter1);</code></p>
+														<p>Unlike, Java you do have to name functions</p>
+														<p><code>
+															function (parameter1, parameter2){...}; //this is valid</code></p>
+															<p>Need to assign a no named function to a variable to access</p>
 
-<img src = "img/DOM.png"/ alt = "DOM picture"> 
+															<p><code>var tocall = function (parameter1, parameter2){...};</code> </p>
+															<p>Any function can be assigned to variable, not just no named ones.</p>
+															<p>Functions can be used as variables.</p>
 
-<p>Then refresh the HTML page. Did you see that the content of the first paragraph tag just changed?</p>
+															<p><code>var two = 27;
+																addtwo = addone(z)+1;</code></p>
+																<p>Functions can be arguments in other functions.</p>
+																<p>Functions can be the return value of other functions.</p>
+																<p>
+																	A function can be declared within another function (nested functions are allowed)</p>
 
-<p>Congrats, you just learned how to use the DOM to access HTML content.</p>
-</div>
-</div>
+																	<p><code>function nested(a,b){
+																		function add{
+																		return a + b;
+																	}
+																	function addfive{
+																	return a +b + 5;
+																}
+																return add + addfive;
 
-<div class = "inner" >
+															}</code></p>
+															<p>Like Java, local variables (those created in the function) are only visible inside of the function. However, if an inner function is being returned, it is called a closure and its local variables are kept alive after the function has returned.</p>
+															<p>
+																Reduce will apply an operator between all elements of an array and uses a function as argument:</p>
+																<p><code>
+																	var example = [4,5,6];
+																	var mult = example.reduce (function(a,b){
+																	return a*b
+																}</code></p>
 
-<h2>Arrays </h2>
-<div class = "whole">
-<p>Array Declaration:</p>
+																<p>Filter and Map work in the same way. They modify an array by taking a function as a parameter. Map will take an array and transform it into an new array according to the function passed as a parameter.
 
-<p>In Javascript, there are two main ways to declare arrays.</p>
-<p>The Array Constructor:</p>
-<p><em>var example = new Array();
-var example = &#40;&#34;one,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;,&#34;five&#34;&#41;</em>
-<br />
-Array Literal Notation:
-<em>var example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;];</em>
-</p>
+																	Filter will filter the elements of an array according to the function passed as a parameter. Foreach will do modify each element of an array according to the parameter function passed in.
 
-</div>
-</div>
-
-<div class = "inner">
-<div class = "whole">
-<p>Length:
-	//using last array declared called example
-	example.length; //equal to 4
-	example.length == 4; //true</p>
-<p>Arrays can are dynamically sized in Javascript meaning they can shrink and grow after they are declared and defined.</p>
-<code>
-	//adds 5 to end of the array; note: arrays can have elements of different types
-	example[length] = 5; 
-	example.length; //now length is 5
-	//can grow arrays by adding new elements to an index that might be greater than length
-example[9] = &#34;the&#34;; //example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</code></p>
-<p><code>// can modify elements too
-example[0] = 15; //example = [15,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;, 5, , , &#34;the&#34;];</code></p>
-<p><code>//can delete elements
-delete example[1]; //changes example[1] from &#34;two&#34; to undefined</code></p>
-<p>Can use built-in methods to add:</p>
-<p><code>
-//unlike Java can add multiple elements at a time
-var arrayarray = [1,2,3,4,5,6];</code></p>
-<p><code>
-arrayarray.push(7,8); //arrayarray = [1,2,3,4,5,6,7,8];</code></p>
-<p><code>//can add elements to beginning as well as end
-arrayarray.unshift(-1,0); //arrayarray = [-1,0,1,2,3,4,5,6,7,8];</code></p>
-<p>Can use built-in methods to remove elements:</p>
-	<p><code>var start = arrayarray.shift(); //start = -1
-	var end = arrayarray.pop(); //end = 8; arrayarray = [-1,0,1,2,3,4,5,6,7]</code></p>
-<p>Can search for elements using indexOf/lastIndexOf</p>
-	<p>returns -1 if it does not find an occurrence</p>
-	<p><code>indexOf(element,startIndex);</code></p>
-	<p><code>lastIndexOf(element,lastIndex);</code></p>
-<p>Accessors that do not modify array, but result in new array</p>
-	<p>Concatenate using concat:</p>
-		<p><code>array3 = array1.concat(array2);</code></p>
-	<p>Join on a separator (default is a comma):</p>
-		<p><code>join(seperator)</code></p>
-	<p>Extract a subsection using: splice
-		slice(startIndex, endIndex);
-		</p>
-		
-		<p><code>var datnewarray = [1,2,3];
-		var spliced = datnewarray.slice(0,1) ; spliced = [1,2]</code></p>
-<p>Sorting and reversing:</p>
-<p><code>
-	arrayname.reverse(); //reverses arrayname
-	var sevenseven = [&#34;jon&#34;, &#34;jacob&#34;, &#34;joseph&#34;, &#34;nate&#34;];
-	//will put them in alphabetical order by default
-	sevenseven.sort(); // sevenseven = [&#34;jacob&#34;, &#34;jon&#34;, &#34;joseph&#34;, &#34;nate&#34;];</code></p>
-</div>
-</div>
-
-<div class = "inner">
-
-<h2>Functions</h2>
-<div class = "whole">
-	<p>Declaring a function is a similiar to java</p>
-		<p><code>
-		function addone (parameter1){
-			parameter1+=1;
-			return parameter1;
-		}</code></p>
-	<p>Calling a function is similar to java</p>
-		<p><code>
-		var y = 199;
-		addone(parameter1);</code></p>
-	<p>Unlike, Java you do have to name functions</p>
-		<p><code>
-		function (parameter1, parameter2){...}; //this is valid</code></p>
-	<p>Need to assign a no named function to a variable to access</p>
-
-		<p><code>var tocall = function (parameter1, parameter2){...};</code> </p>
-	<p>Any function can be assigned to variable, not just no named ones.</p>
-	<p>Functions can be used as variables.</p>
-
-		<p><code>var two = 27;
-		addtwo = addone(z)+1;</code></p>
-	<p>Functions can be arguments in other functions.</p>
-	<p>Functions can be the return value of other functions.</p>
-	<p>
-	A function can be declared within another function (nested functions are allowed)</p>
-
-		<p><code>function nested(a,b){
-			function add{
-				return a + b;
-			}
-			function addfive{
-				return a +b + 5;
-			}
-				return add + addfive;
-
-		}</code></p>
-	<p>Like Java, local variables (those created in the function) are only visible inside of the function. However, if an inner function is being returned, it is called a closure and its local variables are kept alive after the function has returned.</p>
-<p>
-Reduce will apply an operator between all elements of an array and uses a function as argument:</p>
-	<p><code>
-	var example = [4,5,6];
-	var mult = example.reduce (function(a,b){
-		return a*b
-	}</code></p>
-
-<p>Filter and Map work in the same way. They modify an array by taking a function as a parameter. Map will take an array and transform it into an new array according to the function passed as a parameter.
-
-Filter will filter the elements of an array according to the function passed as a parameter. Foreach will do modify each element of an array according to the parameter function passed in.
-
-Sort can take a comparison function a parameter and then sort it according to that instead of the standard alphabetical order for strings.</p>
-</div>
-</div>
-
-<div class = "inner">
+																	Sort can take a comparison function a parameter and then sort it according to that instead of the standard alphabetical order for strings.</p>
+																</div>
+															</div>
+															</br>
+															<div class = "inner">
 
 
-<h2 >What's Next?</h2>
-<div class = "whole">
-<p>The tutorials above are just small part of Javascript. To learn more about Javascript, there are a lot  useful content online. <a href="http://www.w3schools.com/js/">w3school</a> has some very good materials.</p>
+																<h2 >What's Next?</h2>
+																<div class = "whole">
+																	<p>The tutorials above are just small part of Javascript. To learn more about Javascript, there are a lot  useful content online. <a href="http://www.w3schools.com/js/">w3school</a> has some very good materials.</p>
 
-<p>Another good resource to practice is <a href="https://jsfiddle.net/">JSFiddle</a>, you could use your input HTML and Javascript code on the website and run the code instantly.</p>
-</div>
-</div>
+																	<p>Another good resource to practice is <a href="https://jsfiddle.net/">JSFiddle</a>, you could use your input <a href="HTMLpage.html">HTML</a> and Javascript code on the website and run the code instantly.</p>
+																</div>
+															</div>
 
-</div>
-  </body>
-</html>
+														</div>
+													</body>
+													</html>

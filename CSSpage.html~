@@ -28,111 +28,121 @@
 			<h2>What is CSS?</h2>
 			<div class = "whole">
 
-				<p>CSS styles standard HTML. It is a way of separating the styling from the actual content. It provides a single point of control of stylistic changes for entire elements large and small. For instance, you can style the color of the entire page or just one small paragraph element. CSS is basically is a list of styling rules. </p>
+				<p>CSS styles standard <a href="HTMLpage.html">HTML</a>. It is a way of separating the styling from the actual content. It provides a single point of control of stylistic changes for entire elements large and small. For instance, you can style the color of the entire page or just one small paragraph element. CSS is basically is a list of styling rules. CSS files can be created by making a new text file and saving it with a .css extension.</p>
 			</br>	
-			</div>
-		</div>
-		</br>
-
-		<div class = "inner">
-			<h2>Selectors</h2>
-			<div class = "half">	
-			<p>
-				A rule specifies the location to style and then the style to use. The syntax is shown to the right. 
-					</br>
-					------
-					</br>
-
-				You can also combine multiple selectors into one. This is useful if you wanted to style multiple elements the same way, so you don't have to repeat code. 
-
-			</p>
-
-			</div>
-			<div class = "half" id = "code">
-			<p class = "code">Selectors Example</p>
-				<code>
-					selector { </br>
-					property1: styleOne; </br>
-					property2: styleTwo; </br>
-					}</br>
-
-					</br>
-					------
-					</br>
-					</br>
-
-					h1,h2,h3,p { </br>
-					color: blue </br>
-					background: white </br>
-					} </br>
-
-				</code>
-
-
-			</div>
-
-		</div>
-		</br>
-		<div class = "inner">
-			<h2>Adding stylesheets</h2>
-
-			<div class = "half">
-				<p>
-					There are three ways to include CSS: Directly in the element, Using style tags in the header, or an external stylesheet. The first two methods are shown on the right.
-
-					</br>
-
-					An external styesheet is the preferred way since the point of CSS is to seperate style for the content, so having a seperate page is the best way of achieving this. You can reference the stylesheet in the head element of a page. 
-					</p>
-			</div>
-
-<div class = "half" id = "code">
-		<p class = "code">Styling Methods</h2>
-			<code>
-			</br>
-				<em>Direct</em>
-				</br>
-				&lt;h2 style = "color: blue"&gt;Text Goes Here&lt;/p&gt;</br>
-				
-
-				</br>
-				<em>style tags</em>
-				</br>
-				&lt;style&gt;</br>
-				a{</br>
-				color:blue</br>
-				}</br>
-				&lt;/style&gt;</br>
-
-
-
-				</br>
-				
-
-				h1,h2,h3,p { </br>
-				color: blue </br>
-				background: white </br>
-				} </br>
-
-				<em>Stylesheet</em>
-				</br>
-
-				&lt;html&gt;</br>
-				&lt;head&gt;</br>
-				&lt;title&gt; Tech Task 1 Example &lt;/title&gt;</br>
-				&lt;link rel="stylesheet" type = "text/css" href = "theme.css"&gt;</br>
-				&lt;/head&gt;
-
-
-			</code>
-
-
 		</div>
 	</div>
-		<br />
-		<div class = "inner">
-			<h2>Box Model</h2>
+</br>
 
+<div class = "inner">
+	<h2>Selectors</h2>
+	<div class = "half">	
+		<p>
+			A rule specifies the location to style and then the style to use. The syntax is shown to the right. 
+		</br>
+		------
+	</br>
+
+	You can also combine multiple selectors into one. This is useful if you wanted to style multiple elements the same way, so you don't have to repeat code. 
+
+</p>
+
+</div>
+<div class = "half" id = "code">
+	<p class = "code">Selectors Example</p>
+	<code>
+		selector { </br>
+		property1: styleOne; </br>
+		property2: styleTwo; </br>
+	}</br>
+
+</br>
+------
+</br>
+</br>
+
+h1,h2,h3,p { </br>
+color: blue </br>
+background: white </br>
+} </br>
+
+</code>
+
+
+</div>
+
+</div>
+</br>
+<div class = "inner">
+	<h2>Adding stylesheets</h2>
+
+	<div class = "half">
+		<p>
+			There are three ways to include CSS: Directly in the element, Using style tags in the header, or an external stylesheet. The first two methods are shown on the right.
+
+		</br>
+
+		An external styesheet is the preferred way since the point of CSS is to seperate style for the content, so having a seperate page is the best way of achieving this. You can reference the stylesheet in the head element of a page. 
+	</p>
+</div>
+
+<div class = "half" id = "code">
+	<p class = "code">Styling Methods</h2>
+		<code>
+		</br>
+		<em>Direct</em>
+	</br>
+	&lt;h2 style = "color: blue"&gt;Text Goes Here&lt;/p&gt;</br>
+
+
+</br>
+<em>style tags</em>
+</br>
+&lt;style&gt;</br>
+a{</br>
+color:blue</br>
+}</br>
+&lt;/style&gt;</br>
+
+
+
+</br>
+
+
+h1,h2,h3,p { </br>
+color: blue </br>
+background: white </br>
+} </br>
+
+<em>Stylesheet</em>
+</br>
+
+&lt;html&gt;</br>
+&lt;head&gt;</br>
+&lt;title&gt; Tech Task 1 Example &lt;/title&gt;</br>
+&lt;link rel="stylesheet" type = "text/css" href = "theme.css"&gt;</br>
+&lt;/head&gt;
+
+
+</code>
+
+
+</div>
+</div>
+<br />
+<div class = "inner">
+	<h2>Box Model</h2>
+
+	<div class = "whole">
+		<p>
+			The Box Model is the name given to the layout used for CSS. A figure for this can be seen below. The <a href="HTMLpage.html">HTML</a> elements is the content and then all of the surounding boxes are the stylings such as bordering, pading, and margins.
+		</p>
+		<br />
+		<p>
+			One can also alter the style, width, color, and radius of a border or adjust the size of the margins and padding. We will show some examples below of how this can be done but first lets look at margins and padding.
+		</p>
+
+<<<<<<< HEAD
 			<div class = "whole">
 				<p>
 					The Box Model is the name given to the layout used for CSS. A figure for this can be seen below. The HTML elements is the content and then all of the surounding boxes are the stylings such as bordering, pading, and margins.
@@ -156,8 +166,36 @@
 				<img id="resize" src="img/box-model.png" alt="Example Element">
 			</div>
 			<p>codeproject.com</p>
-<<<<<<< HEAD
 
+<<<<<<< HEAD
+=======
+			<div class = "inner">
+				<div class = "half">
+					<p>
+						Lets look at an example of how you could style a box around an h2 element. In the example on the right the margin is set to have top, botom and left margin of 10 px a right margin of 100 px. You can figure this out because you read the margin: 10px 100px 10px 10px; in clockwise order starting at the top. However the with the border it only uses 3. This means that the top is 5 px the right is 1 px the botom is 5 px and the left is also 1 px. The padding will assign 20px to all 4 sides. 
+					</p>
+					<p>
+						Furthermore tags inherit styling, so if a parent tag is styled the child will inherit many of the stylings from its parent. This can be useful in making stylings apply to something without styling the individual element
+					</p>
+				</div>
+			<div class = "half" id = "code">
+				<p>Example CSS on h2</p>
+				<code>
+					h2 &#123;<br />
+						&nbsp;&nbsp;margin: 10px 100px 10px 10px;<br />
+						&nbsp;&nbsp;border: 5px 1px 5px;<br />
+						&nbsp;&nbsp;padding: 20px;<br />
+					&#123;
+				</code>
+
+			</div>
+			</br>
+
+			</div>
+
+
+
+>>>>>>> 6a591af... fixed syntax errors
 
 			</div>
 			<br />
@@ -166,88 +204,161 @@
 			<div class = "whole">
 				<p>
 					When multiple selectors match the same element, a conflict happens. To avoid this, most developers determine which selector is more important. There are four factors that determine which rule is the most important:
+=======
+>>>>>>> 309eb32... FUCK
 
-					<ol>
-						
-						<li>location</li>
-						<li>importance</li>
-						<li>Specificity</li>
-						<li>Declaration order</li>
-					</ol>
+	</div>
+	<br />
+	<div class = "half">
+		<p>
+			Margins and padding have 4 sides that can be adjusted in size completely independently of each other. They are the top right bottom and left margin/padding. This means that one side could be made to be smaller or larger than the other. A representation of these paddings and borders can be seen in the image to the right. One can also alter the style, width, color, and radius of a border or adjust the size of the margins and padding.
+		</p>
 
-				Also, there are only 3 possible sources of CSS rules:
+	</div>
+	<div class="half" id="image">
 
-				<ol>
-					<li>Author</li>
-					<li>User</li>
-					<li>Browser</li>
+		<img id="resize" src="img/box-model.png" alt="Example Element">
+	</div>
+	<p>codeproject.com</p>
 
-				</ol>
-					
-				Generally, they follow that order of importance too, except when !important modifer is used, such as:  
-				</br>
-				<em>p {color:red !important</em>
-				</br>
+	<div class = "inner">
+		<div class = "half">
+			<p>
+				Lets look at an example of how you could style a box around an h2 element. In the example on the right the margin is set to have top, botom and left margin of 10 px a right margin of 100 px. You can figure this out because you read the margin: 10px 100px 10px 10px; in clockwise order starting at the top. However the with the border it only uses 3. This means that the top is 5 px the right is 1 px the botom is 5 px and the left is also 1 px. The padding will assign 20px to all 4 sides. 
+			</p>
+			<p>
+				Furthermore tags inherit styling, so if a parent tag is styled the child will inherit many of the stylings from its parent. This can be useful in making stylings apply to something without styling the individual element
+			</p>
+		</div>
+		<div class = "half" id = "code">
+			<p>Example CSS on h2</p>
+			<code>
+				h2 &#123;<br />
+				&nbsp;&nbsp;margin: 10px 100px 10px 10px;<br />
+				&nbsp;&nbsp;border: 5px 1px 5px;<br />
+				&nbsp;&nbsp;padding: 20px;<br />
+				&#123;
+			</code>
 
-				However, a user style element marked by the important modifer will overrule any author rules, including those marked as important. Author rules marked important will overrule all regular author tags, however. 
-				</br>
-				</br>
-				After importance, specificity determines what styling gets priority.
-				Specificity is a quadruple vector: (a,b,c,d), where:
+		</div>
+	</br>
 
-				<ul>
-					<li>a is 1 for an inline style or 0 for a rule.</li>
-					<li>b is for the number of ids.</li>
-					<li>c is the number of classes </li>
-					<li>d is the number of elements.</li>
-
-				</ul>
-				</p>
+</div>
 
 
-			</div>
 
+
+<<<<<<< HEAD
+<<<<<<< HEAD
 
 
 			</div>
 			</br>
 
+=======
+</br>
+>>>>>>> 6a591af... fixed syntax errors
+=======
+</div>
+<br />
+>>>>>>> 309eb32... FUCK
 <div class = "inner">
-			<h2>Defining Style</h2>
+	<h2>Styling Importance</h2>
+	<div class = "whole">
+		<p>
+			When multiple selectors match the same element, a conflict happens. To avoid this, most developers determine which selector is more important. There are four factors that determine which rule is the most important:
 
-			<div class = "whole">
-			If you want to style a set of elements in the same way, you can use classes to make the job easier. 
+			<ol>
 
-			</div>
+				<li>Location</li>
+				<li>Importance</li>
+				<li>Specificity</li>
+				<li>Declaration order</li>
+			</ol>
+
+			Also, there are only 3 possible sources of CSS rules:
+
+			<ol>
+				<li>Author</li>
+				<li>User</li>
+				<li>Browser</li>
+
+			</ol>
+
+			Generally, they follow that order of importance too, except when !important modifer is used, such as:  
+		</br>
+		<em>p {color:red !important}</em>
+	</br>
+
+	However, a user style element marked by the important modifer will overrule any author rules, including those marked as important. Author rules marked important will overrule all regular author tags, however. 
+</br>
+</br>
+After importance, specificity determines what styling gets priority.
+Specificity is a quadruple vector: (a,b,c,d), where:
+
+<ul>
+	<li>a is 1 for an inline style or 0 for a rule.</li>
+	<li>b is for the number of ids.</li>
+	<li>c is the number of classes </li>
+	<li>d is the number of elements.</li>
+
+</ul>
+</p>
 
 
-			</div>
+</div>
 
+</br>
+<div class = "inner">
+	<h2>Defining Style</h2>
+
+	<div class = "whole">
+		<p>If you want to style a set of elements in the same way, you can use classes and IDs to make the job easier. In order to apply a class or ID styling to an <a href="HTMLpage.html">HTML</a> element, you must include the 'class' or 'ID' attribute with a value of the class or ID name. For example:</p>
+		<p><em>&lt;h2 class = &quot;class_name&quot;&gt;...&lt;/h2&gt;</em></p>
 
 	</div>
-=======
-		</div>
-		<div class = "inner">
-			<div class = "half">
-				<p>
-					Lets look at an example of how you could style a box around an h2 element. In the example on the right the margin is set to have top, botom and left margin of 10 px a right margin of 100 px. You can figure this out because you read the margin: 10px 100px 10px 10px; in clockwise order starting at the top. However the with the border it only uses 3. This means that the top is 5 px the right is 1 px the botom is 5 px and the left is also 1 px. The padding will assign 20px to all 4 sides. 
-				</p>
-				<p>
-					Furthermore tags inherit styling, so if a parent tag is styled the child will inherit many of the stylings from its parent. This can be useful in making stylings apply to something without styling the individual element
-				</p>
-			</div>
-			<div class = "half" id = "code">
-				<p>Example CSS on h2</p>
-				<code>
-					h2 &#123;<br>
-						&nbsp;&nbsp;margin: 10px 100px 10px 10px;<br>
-						&nbsp;&nbsp;border: 5px 1px 5px;<br>
-						&nbsp;&nbsp;padding: 20px;<br>
-					&#123;
-				</code>
-			</div>
-		</div>
->>>>>>> bcc6998... idk
+
+
+</div>
+<br />
+<div class = "inner">
+	<div class = "half" i>
+		<p>
+			The class and ID's can be declared in two locations, either the head of the <a href="HTMLpage.html">HTML</a> document in the style section, or in the CSS stylesheet. An example of embedding it in the style section of the <a href="HTMLpage.html">HTML</a> can be seen in example one on the right and declaring the class in the CSS stylesheet can be seen in example two.
+		</p>
+	</div>
+	<div class = "half" id = "code">
+		<p>Example 1: In style section of <a href="HTMLpage.html">HTML</a></p>
+		<code>
+			&lt;!DOCTYPE html&gt;<br />
+			&lt;html&gt;<br />
+			&nbsp;&lt;head&gt;<br />
+			&nbsp;&nbsp;&lt;style&gt;<br />
+			&nbsp;&nbsp;.class_name { <br />
+			&nbsp;&nbsp;&nbsp;background-color: red;<br />
+			&nbsp;&nbsp;&nbsp;text-align: left;<br />
+			&nbsp;&nbsp;}<br />
+			&nbsp;&nbsp;&lt;/style&gt;<br />
+			&nbsp;&lt;/head&gt;<br />
+			&nbsp;&lt;body&gt;<br />
+			&nbsp;&nbsp;&lt;h1 class=&quot;class_name&quot;&gt;Heading&lt;/h1&gt;<br />
+			&nbsp;&nbsp;&lt;p&gt;<a href="HTMLpage.html">HTML</a> Example paragraph.&lt;/p&gt;<br />
+			&nbsp;&lt;/body&gt;<br />
+			&lt;/html&gt;
+		</code>
+		<br />
+		<p>Example 2: In Stylesheet</p>
+		<code>
+			.class_name { <br />
+			&nbsp;&nbsp;background-color: red;<br />
+			&nbsp;&nbsp;text-align: left;<br />
+			}
+		</code>
+	</div>
+</div>
+
+
+</div>
 
 </body>
 </html>
