@@ -23,10 +23,10 @@
 	</div>
 	<br />
 	<div class = "inner">
-		<h2>Introduction</h2>
+		<h2>What is Ruby?</h2>
 		<div class = "whole">
 
-			<p>Ruby is popular general-purpose, object-oriented programming langauge. Although its general-purpose nature allows it to be used for many different things, most developers use it as a server-side programming langauge for desiging web applications. </p>
+			<p>Ruby is popular general-purpose, object-oriented programming langauge. Although its general-purpose nature allows it to be used for many different things, most developers use it as a server-side programming langauge for desiging web applications.</p>
 			</br>
 			<p>So how is Ruby different from Java? First off in Java you must compile your code before you can run it. Ruby, However, is known as an interpreted langauge, so everything is determined at runtime, and no compilation is necessary. Also, everything in ruby is an object, even things like integers and characters. Building off of this, there are no static 'types' in ruby like Java has. Rather, everything is dynamically typed, so the type of a variable can change during runtime. Many of the useful and different features Ruby provides will be discussed on this page. </p>
 		</div>
@@ -36,7 +36,7 @@
 		<h2>Let's Begin</h2>
 		<br />
 		<div class = "half">
-			<p>Ruby comes with a very useful program that can show the results of Ruby statements as you feed them to the program in a terminal. In order to access this in the Unix environment open a terminal and type in "irb" then hit enter. You will then see something similar to what you see in example 1 on the right. Using irb is a very good way to learn how the many basics of Ruby. To exit the irb simply type exit and press enter.
+			<p>Ruby comes with a very useful program that can show the results of Ruby statements as you feed them to the program in a terminal. In order to access this in the Unix environment open a terminal and type in "irb" then hit enter. You will then see something similar to what you see in Example 1 on the right. Using irb is a very good way to learn how the many basics of Ruby. To exit the irb simply type exit and press enter.
 			</p>
 		</div>
 		<div class = "half" id = "code">
@@ -54,7 +54,7 @@
 	<br />
 		<div class = "half">
 			<p>
-			Another way of writing Ruby code is to have it in a file with the .rb extension. For this tutorial an easy way to test the code you see is to make a file and copy code into it and then run that file. An example of executing a ruby file can be seen in example 2.
+			Another way of writing Ruby code is to have it in a file with the .rb extension. For this tutorial an easy way to test the code you see is to make a file and copy code into it and then run that file. An example of executing a ruby file can be seen in Example 2.
 
 			</br>
 			</br>
@@ -82,8 +82,7 @@
 		<h2>Hello World</h2>
 		<br />
 		<div class = "half">
-			<p>Let's begin with making a classic example of "Hello World" in Ruby. In example 1 and 2 you can see the code for two different "Hello World" programs and their outputs in a linux environment. The difference between "puts" and "print" is a line break, so when "puts" is used there will be a line break after similar to in java the print vs println. Also notice in the example that a semicolon is not needed at the end of each line. <br>
-			Another thing you will see in these examples is how to do comments, in example one it shows how to do a paragraph comment using =begin to start the comment and =end. Everything in between will be counted as a comment. In the second example we see a single line comment using the pound sign(#).
+			<p>Let's begin with making a classic example of "Hello World" in Ruby. In Examples 1 and 2 you can see the code for 2 different "Hello World" programs and their outputs in a linux environment. The difference between "puts" and "print" is a line break, so when "puts" is used there will be a line break after similar Java's print and println. Also notice that a semicolon is not needed at the end of each line. Example 1 shows how to do a paragraph comment using <em>=begin</em> to start the comment and <em>=end</em>. Everything in between will be counted as a comment. Example 2 shows a single line comment using the pound sign(#).
 			</p>
 		</div>
 		<div class = "half" id = "code">
@@ -129,29 +128,25 @@
 		<div class = "inner">
 			</br>
 			<div class = "half">
-			<p> In this example, notice how parentheses are not used around the condition of the statements, and neither are brackets. To mark the end of the statement, the 'end' keyword is used. This allows for easier readability of the code.
-			</br>
-			</br>
-			</br>
+			<p> In this example, notice how parentheses are not used around the condition of the statements, and neither are brackets. To mark the end of the statement, the 'end' keyword is used. This allows for easier readability of the code.</p>
 
 
-			<em>Conditionals:</em>
-			</br>
-			The boolean operators and comparisons behave just like java, where (&&,||,!) are for and, or, and not, and (<.<=,>,>=, ==) are just as you'd expect. 'true' is for true and 'false' is for false. 
-			</p>
+			<p class="italic">Conditionals:</p>
+			
+			<p>The boolean operators and comparisons behave just like Java, where (&amp;&amp;,||,!) are for and, or, and not, and (&lt;.&lt;=,>,>=, ==) are just as you'd expect. 'true' is for true and 'false' is for false.</p>
 			</div>
 			<div class = "half" id = "code">
 				<p class = "code">If/elsif/else</p>
 				
 				<code>
-				if x < 5</br>
+				if x &lt; 5</br>
 					puts "hello"</br>
 				end</br>
 				</code>
 				</br>
 
 				<code>
-				if x < 5</br>
+				if x &lt; 5</br>
 					puts "hello"</br>
 				else</br>
 				puts "hi!"</br>
@@ -160,9 +155,9 @@
 				</br>
 
 				<code>
-				if x < 5</br>
+				if x &lt; 5</br>
 					puts "hello"</br>
-				elsif x < 10</br>
+				elsif x &lt; 10</br>
 				puts "hey!"</br>
 				else</br>
 				puts "hi!"</br>
@@ -207,26 +202,14 @@
 		<div class = "inner">
 			</br>
 			<div class = "half">
-			<p> While loops in Ruby look almost like while loops in Java, but similar to if/else statements, no parantheses are needed around the condition and the 'end' keyword marks the end of the loop instead of a bracket. 
-
-			</br>
-			</br>
-			</br>
-			For loops, although behave the same way in Java, are syntactically different. As shown on the right, the statement first consists of the dummy variable, and then is followed by the keyword 'in'. the expression that follows 'in' is what gets iterated over. In this example, 1..4 is the range of numbers 1 through 4. This means that the four loop will iterate four times until it is completed. 
-
-			</br>
-			</br>
-
-			One could also iterate over a list in this manner simply by replacing the range (1..4) with the list. This is generally the most common form of iteration used in Ruby, next to the .each function. 
-
-
-			</p>
+			<p> While loops in Ruby are very similar to those Java, but like if/else statements, no parantheses are needed around the condition and the 'end' keyword marks the end of the loop instead of a bracket. For loops behave the same as in Java, but are syntactically different. As shown on the right, the statement first consists of a dummy variable, and then is followed by the keyword 'in'. The expression that follows 'in' is what gets iterated over. In this example, 1..4 is the range of numbers 1 through 4. This means that the for loop will iterate four times until it is completed.</p>
+			<p>One could also iterate over a list in this manner simply by replacing the range (1..4) with the list. This is generally the most common form of iteration used in Ruby, next to the <em>.each</em> function. </p>
 			</div>
 			<div class = "half" id = "code">
 				<p class = "code">While and For loops</p>
 				
 				<code>
-				while x < 10</br>
+				while x &lt; 10</br>
 				puts x</br>
 				x = x + 1</br>
 				end </br>
@@ -248,7 +231,7 @@
 	<div class = "inner">
 		</br>
 		<div class = "half">
-			<p>The .each function is an easy way to iterate over objects in ruby. In this example, an array is created and is iterated over using the function. The |x| can again be thought of the dummy variable.  </p>
+			<p>The <em>.each</em> function is an easy way to iterate over objects in ruby. In this example, an array is created and is iterated over using the function. The |x| can again be thought of the dummy variable.  </p>
 		</div>	
 		<div class = "half" id = "code"> 
 			<p class = "code"> .each function</p>
@@ -257,11 +240,6 @@
 				array = [1,2,3,4]</br>
 				array.each do |x|</br>
 				puts x</br>
-	<div class = "inner">
-				end</br>
-
-
-
 			</code>
 		</div>
 	</div>
@@ -276,11 +254,8 @@
 		</div>
 	<br />
 		<div class = "inner">
-			</br>
 			<div class = "half">
-			<p> 
-			In the example a function with name hello is created and takes in the variable "name". The name is then printed along with a friendly "Hello" inside the function. In ruby make sure to place the function before any code that will be using it, as seen in the example, otherwise it won't be declared.
-			</p>
+			<p> In the example a function with name hello is created and takes in the variable "name". The name is then printed along with a friendly "Hello" inside the function. In ruby make sure to place the function before any code that will be using it, as seen in the example, otherwise it won't be declared.</p>
 			</div>
 			<div class = "half" id = "code">
 				<p class = "code">Function Example</p>
@@ -311,18 +286,8 @@
 		<div class = "inner">
 			</br>
 			<div class = "half">
-			<p> 
-			To start off, use the keyword 'class', followed by its name. The end of the class definition marked by the 'end' keyword. 
-			</br>
-			---
-			</br>
-
-			Next, the constructor must be defined. To do so, make a function named 'initialize'. When an object of the class gets created, the instance variables will be initialized through the function. Note that '@' at the beginning of a variable marks an instance variable. You can throw in all of your class functions inside the class definition as well. 
-			</br>
-			---
-			</br>
-
-			Outside of your class definition, you can use the .new function to initialize an object of your class. the .new function will constuct the object using the initialize function inside the class definition. 
+			<p>To start off, use the keyword 'class', followed by its name. The end of the class definition marked by the 'end' keyword. Next, the constructor must be defined. To do so, make a function named 'initialize'. When an object of the class gets created, the instance variables will be initialized through the function. Note that '@' at the beginning of a variable marks an instance variable. You can throw in all of your class functions inside the class definition as well.</p>
+			<p>Outside of your class definition, you can use the <em>.new</em> function to initialize an object of your class. the <em>.new</em> function will constuct the object using the initialize function inside the class definition.</p>
 
 			</p>
 			</div>
@@ -338,29 +303,25 @@
 				------
 				</br>
 
-				</code>
+				
 				</br>	
 
-				<code>
+				
 				class ClassName</br>
 				</br>
-				def initialize</br>
-				@x = 0</br>
-				@y = 0</br>
-				end</br>
+				&nbsp;&nbsp;def initialize</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;@x = 0</br>
+				&nbsp;&nbsp;&nbsp;&nbsp;@y = 0</br>
+				&nbsp;&nbsp;end</br>
 				...</br>
 				end</br>
 
 				</br>
 				------
 				</br>
-
-				</code>
 				</br>		
 
-
-				<code>
-				X = className.New
+				X = className.new
 
 				</code>			
 
