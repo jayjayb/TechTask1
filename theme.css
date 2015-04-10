@@ -41,6 +41,27 @@ text-align:center;
 font-family: 'Righteous', cursive;
 color: white;
 }
+#tab {
+	background-color: white;
+    margin-left:auto; 
+    margin-right:auto;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+#tab th{
+	color: black;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+#tab td{
+	color: black;
+	font-family: Courier, 'New Courier', monospace;
+	border: 1px solid black;
+    border-collapse: collapse;
+}
+#tab td + td{
+	text-align:left;
+}
 .inner{
 display: inline-block;
 margin: 12px;
@@ -53,7 +74,7 @@ text-align:left;
 width:400px;
 height:300px;
 float:left;
-margin: auto 10px;
+margin: 10px;
 overflow: auto;
 }
 .whole {
