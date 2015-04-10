@@ -1,19 +1,20 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8">
-    
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Javascript Tutorial</title>
-    
+  <title>Learn Javascript</title>
+<link rel="stylesheet" type="text/css" href="theme.css">
+<link href='http://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   </head>
   
   <body class="index">
     <div class="JS">
  <!-- This file is a partial that generates javascript tutorial -->
 
-<h2 id="javascript-tutorial">Javascript Tutorial</h2>
+<div class = "inner">
+<h2 id="javascript-tutorial" style = "color:white">Javascript Tutorial</h2>
 
+<div class = "whole">
 <h3 id="what-is-javascript">What is Javascript</h3>
 
 <p>Javascript is a scripting language that add behavior to a website. websites with only HTML and CSS are static, meaning that the webpage is does not change much. With the help of Javascript, one can create dynamic web page that its content could change after it is rendered.</p>
@@ -28,7 +29,10 @@
   <li>Javascript is object based, it uses DOM(Document Object Model)</li>
   <li>Javascript can be used to handle events on HTML page</li>
 </ul>
-
+</div>
+</div>
+<div class = "inner">
+<div class = "whole">
 <p>Today we are going to learn to some basics about javascript. First, let's start writing Hello World using Javascript and understand where to put Javascript code (inline or external).</p>
 
 <h3 id="first-hello-world-using-javascriptinline">First Hello World Using Javascript(Inline)</h3>
@@ -64,7 +68,11 @@ within the javascript.js, put the following code:</p>
 <p>This will create a pop up window every time the page is loaded.</p>
 
 <p>Let's see the result!(refresh the HTML page) If you see a pop up window with "Hello World", then you've accomplished this task.</p>
+</div>
+</div>
 
+<div class = "inner">
+<div class = "whole">
 <h3 id="change-html-content">Change HTML Content</h3>
 <p>Next, I would like to introduce the DOM(Document Object Model). The DOM is an javascript interface that allows us to access the HTML content.</p>
 
@@ -77,18 +85,26 @@ within the javascript.js, put the following code:</p>
 <p>Then refresh the HTML page. Did you see that the content of the first paragraph tag just changed.</p>
 
 <p>Congrats, you just learned how to use DOM to access HTML content.</p>
+</div>
+</div>
 
+<div class = "inner" >
+<div class = "whole">
 <h3>Arrays </h3>
 
 <p>Array Declaration:</p>
 
 <p>In Javascript, there are two main ways to declare arrays.</p>
+<p>The Array Constructor:</p>
 
-<p>The Array Constructor:
- var example = new Array ();
-var example = (“one”,”two”,”three”,”four”,”five”);
+ var example = new Array \(\);
+var example = &#40;&#34;one,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;,&#34;five&#34;&#40;
 Array Literal Notation:
-var example = [“one”,”two”,”three”,”four”];</p>
+var example = [&#34;one&#34;,&#34;two&#34;,&#34;three&#34;,&#34;four&#34;];
+
+</div>
+</div>
+
 <p>Length:
 	//using last array declared called example
 	example.length; //equal to 4
@@ -177,6 +193,12 @@ Reduce will apply an operator between all elements of an array and uses a functi
 Sort can take a comparison function a parameter and then sort it according to that instead of the standard alphabetical order for strings.</p>
 
 </div>
+
+<h3 id="whats-next">What's Next</h3>
+<p>The tutorial above are just small part of javascript. To learn more about javascript, there are a lot  useful content online. <a href="http://www.w3schools.com/js/">w3school</a> has some very good materials.</p>
+
+<p>Another good resource to practice is <a href="https://jsfiddle.net/">JSFiddle</a>, you could use your input  HTML and Javascript code on the website and run the code instantly.</p>
+
 
   </body>
 </html>
