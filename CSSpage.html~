@@ -156,36 +156,8 @@
 				<img id="resize" src="img/box-model.png" alt="Example Element">
 			</div>
 			<p>codeproject.com</p>
-
 <<<<<<< HEAD
-=======
-			<div class = "inner">
-				<div class = "half">
-					<p>
-						Lets look at an example of how you could style a box around an h2 element. In the example on the right the margin is set to have top, botom and left margin of 10 px a right margin of 100 px. You can figure this out because you read the margin: 10px 100px 10px 10px; in clockwise order starting at the top. However the with the border it only uses 3. This means that the top is 5 px the right is 1 px the botom is 5 px and the left is also 1 px. The padding will assign 20px to all 4 sides. 
-					</p>
-					<p>
-						Furthermore tags inherit styling, so if a parent tag is styled the child will inherit many of the stylings from its parent. This can be useful in making stylings apply to something without styling the individual element
-					</p>
-				</div>
-			<div class = "half" id = "code">
-				<p>Example CSS on h2</p>
-				<code>
-					h2 &#123;<br />
-						&nbsp;&nbsp;margin: 10px 100px 10px 10px;<br />
-						&nbsp;&nbsp;border: 5px 1px 5px;<br />
-						&nbsp;&nbsp;padding: 20px;<br />
-					&#123;
-				</code>
 
-			</div>
-			</br>
-
-			</div>
-
-
-
->>>>>>> 6a591af... fixed syntax errors
 
 			</div>
 			<br />
@@ -214,7 +186,7 @@
 					
 				Generally, they follow that order of importance too, except when !important modifer is used, such as:  
 				</br>
-				<em>p {color:red !important}</em>
+				<em>p {color:red !important</em>
 				</br>
 
 				However, a user style element marked by the important modifer will overrule any author rules, including those marked as important. Author rules marked important will overrule all regular author tags, however. 
@@ -235,15 +207,11 @@
 
 			</div>
 
-<<<<<<< HEAD
 
 
 			</div>
 			</br>
 
-=======
-</br>
->>>>>>> 6a591af... fixed syntax errors
 <div class = "inner">
 			<h2>Defining Style</h2>
 
@@ -257,6 +225,29 @@
 
 
 	</div>
+=======
+		</div>
+		<div class = "inner">
+			<div class = "half">
+				<p>
+					Lets look at an example of how you could style a box around an h2 element. In the example on the right the margin is set to have top, botom and left margin of 10 px a right margin of 100 px. You can figure this out because you read the margin: 10px 100px 10px 10px; in clockwise order starting at the top. However the with the border it only uses 3. This means that the top is 5 px the right is 1 px the botom is 5 px and the left is also 1 px. The padding will assign 20px to all 4 sides. 
+				</p>
+				<p>
+					Furthermore tags inherit styling, so if a parent tag is styled the child will inherit many of the stylings from its parent. This can be useful in making stylings apply to something without styling the individual element
+				</p>
+			</div>
+			<div class = "half" id = "code">
+				<p>Example CSS on h2</p>
+				<code>
+					h2 &#123;<br>
+						&nbsp;&nbsp;margin: 10px 100px 10px 10px;<br>
+						&nbsp;&nbsp;border: 5px 1px 5px;<br>
+						&nbsp;&nbsp;padding: 20px;<br>
+					&#123;
+				</code>
+			</div>
+		</div>
+>>>>>>> bcc6998... idk
 
 </body>
 </html>
