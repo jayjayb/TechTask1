@@ -25,7 +25,10 @@
 	<div class = "inner">
 		<h2>Introduction</h2>
 		<div class = "whole">
-			<p>So how is Ruby different from Java? First off in Java you must compile your code before you can run it. However in Ruby you just run it directly. Another main difference is that in Ruby everything is an object, even things like simple numbers. One more big difference is that variables are dynamicly casted. We will get into more of what this means below.</p>
+
+			<p>Ruby is popular general-purpose, object-oriented programming langauge. Although its general-purpose nature allows it to be used for many different things, most developers use it as a server-side programming langauge for desiging web applications. </p>
+			</br>
+			<p>So how is Ruby different from Java? First off in Java you must compile your code before you can run it. Ruby, However, is known as an interpreted langauge, so everything is determined at runtime, and no compilation is necessary. Also, everything in ruby is an object, even things like integers and characters. Building off of this, there are no static 'types' in ruby like Java has. Rather, everything is dynamically typed, so the type of a variable can change during runtime. Many of the useful and different features Ruby provides will be discussed on this page. </p>
 		</div>
 	</div>
 	<br/>
@@ -63,13 +66,18 @@
 				% 
 			</code>
 		</div>
+
+
+		
 	</div>
+	</br>
+
 		<br/>
 	<div class = "inner">
 		<h2>Hello World</h2>
 		<br />
 		<div class = "half">
-			<p>Let's begin with making a classic example of "Hello World" in Ruby. In example 1 and 2 you can see the code for two different "Hello World" programs. The difference between "puts" and "print" is a line break, so when "puts" is used there will be a line break after similar to in java the print vs println. 
+			<p>Let's begin with making a classic example of "Hello World" in Ruby. In example 1 and 2 you can see the code for two different "Hello World" programs and their outputs in a linux environment. The difference between "puts" and "print" is a line break, so when "puts" is used there will be a line break after similar to in java the print vs println. 
 			</p>
 		</div>
 		<div class = "half" id = "code">
@@ -98,24 +106,81 @@
 		</div>
 	</div>
 	<br/>
-	<h2>Next</h2>
+
+		<h2>Control Flow in Ruby</h2>
+
 	<div class = "inner">
-	<br />
-		<div class = "half">
-			<p>
-				asdf
-			</p>
-		</div>
-		<div class = "half" id = "code">
-			<p>Example 2
-			</p>
-			<code>/home/4/cseUsername<br>
-				% ruby exampleFile.rb<br>
-				/home/4/cseUsername<br>
-				% 
-			</code>
+		<div class = "whole">
+		<p>Control flow allows for directing what code executes in a program.One can use things like if/else or case statements to direct the flow of a program, similar to that of Java.</p>
 		</div>
 	</div>
+	<br />
+
+		<div class = "inner">
+			</br>
+			<div class = "half">
+			<p> In this example, notice how parentheses are not used around the condition of the statements, and neither are brackets. To mark the end of the statement, the 'end' keyword is used. This allows for easier readability of the code.</p>
+			</div>
+			<div class = "half" id = "code">
+				<p class = "code">If/elsif/else</p>
+				
+				<code>
+				if x < 5</br>
+					puts "hello"</br>
+				end</br>
+				</code>
+				</br>
+
+				<code>
+				if x < 5</br>
+					puts "hello"</br>
+				else</br>
+				puts "hi!"</br>
+				end</br>
+				</code>
+				</br>
+
+				<code>
+				if x < 5</br>
+					puts "hello"</br>
+				elsif x < 10</br>
+				puts "hey!"</br>
+				else</br>
+				puts "hi!"</br>
+				end </br>
+				</code>
+				</br>
+			</div>
+		</div>
+
+		</br>
+
+				<div class = "inner">
+			</br>
+			<div class = "half">
+			<p> Case statements are useful when you have a series of conditions to check. the 'else' keyword is similar to 'default' in Java if none of the statements pass.</p>
+			</div>
+			<div class = "half" id = "code">
+				<p class = "code">If/elsif/else</p>
+				
+				<code>
+				case x</br>
+				when 1</br>
+				puts "x is 1"</br>
+				when 2</br>
+				puts "x is 2"</br>
+				else</br>
+				puts "nothing in x."</br>
+				end</br>
+				</code>
+				</br>	
+			</div>
+		</div>
+		</br>
+
+	</div>
+	</br>
+
 </div>
 
 
